@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- Use echarts.js -->
+    <script src="echarts.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="My Skills Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <!--start-header-section-->
+    <div class="header-section">
+        <div class="continer">
+            <img src="images/example.png">
+            <h1>Homework 5<span>!</span></h1>
+            <p>Just for example</p>
+            <!--<a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>-->
+        </div>
+    </div><br><br>
+
+    <!-- Prepare the DOM element to be held by eCharts -->
+    <div class="row">
+        <div class="col-md-2 col-md-offset-3">
+            <div id="main1" style="width: 800px;height:600px;"></div>
+            <div id="main2" style="width: 600px;height:400px;"></div>
+
+            <script type="text/javascript">
+                // Initialse eCharts
+                option = {
+                    title: {
+                        text: 'Location of Barbecue Sites',
+                        subtext: '2017',
+                        x: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        orient: 'vertical',
+                        left: 'left',
+                        data: ["Yuen Long", "Tuen Mun", "Sai Kung", "Sha Tin", "Southern", "Tsuen Wan", "Wong Tai Sin", "Islands", "Tai Po"]
+                    },
+                    series: [{
+                        name: 'Count',
+                        type: 'pie',
+                        radius: '55%',
+                        center: ['50%', '60%'],
+                        data: [{
+                            value: 1,
+                            name: 'Yuen Long'
+                        }, {
+                            value: 4,
+                            name: 'Tuen Mun'
+                        }, {
+                            value: 4,
+                            name: 'Sai Kung'
+                        }, {
+                            value: 2,
+                            name: 'Sha Tin'
+                        }, {
+                            value: 14,
+                            name: 'Southern'
+                        }, {
+                            value: 4,
+                            name: 'Tsuen Wan'
+                        }, {
+                            value: 1,
+                            name: 'Wong Tai Sin'
+                        }, {
+                            value: 10,
+                            name: 'Islands'
+                        }, {
+                            value: 1,
+                            name: 'Tai Po'
+                        }],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }]
+                };
+                // Use the option to display chart
+                var myChart1 = echarts.init(document.getElementById('main1'));
+                myChart1.setOption(option);
+                option['series'][0]['stack'] = 'population';
+                option['series'][1]['stack'] = 'population';
+                var myChart2 = echarts.init(document.getElementById('main2'));
+                myChart2.setOption(option);
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
