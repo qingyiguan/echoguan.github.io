@@ -15,23 +15,20 @@
         "formatter": "{a} <br/>{b} : {c} ({d}%)"
     },
     "series": [{
-            "name": "Count"
-            "type": "pie",
-            "radius"
-            " : 55%,
-            "center": ['50%', '60%'],
-            "data": [
-                { value: 1, name: "Yuen Long" },
-                { value: 4, name: "Tuen Mun", },
-                { value: 4, name: "Sai Kung", },
-                { value: 2, name: "Sha Tin", },
-                {
-                    value: 14,
-                    name: "Southern",
-                    { value: 4, name: "Tsuen Wan", },
-                    { value: 1, name: "Wong Tai Sin", },
-                    { value: 10, name: "Islands", },
-                    { value: 1, name: "Tai Po", }
-                ]
-            }]
-    }
+        "name": "Count"
+        'type': "pie",
+        "radius"
+        " : 55%,
+        "center": ['50%', '60%'],
+        "data": [
+            { value: 1, name: 'Yuen Long' },
+            { value: 4, name: 'Tuen Mun' },
+            { value: 4, name: 'Sai Kung' },
+            { value: 2, name: 'Sha Tin' },
+            { value: 14, name: 'Southern' } { value: 4, name: 'Tsuen Wan' },
+            { value: 1, name: 'Wong Tai Sin' },
+            { value: 10, name: 'Islands' },
+            { value: 1, name: 'Tai Po' }
+        ]
+    }]
+}
