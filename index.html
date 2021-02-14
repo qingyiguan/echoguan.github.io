@@ -43,66 +43,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <img src="images/echo.png">
             <h1>hello..<span>!</span></h1>
             <p>My name is Echo Guan</p>
-            <a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+            <!-- <a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a> -->
         </div>
     </div>
     <!--end header-section-->
 
-    <!--start-study-section-->
-    <!--<div class="study-section">
-        <div class="container">
-            <div class="study-grids">
-                <div class="col-md-6 study-grid">
-                    <h3>study..<span>!</span></h3>
-                    <div class="study1">
-                        <p>Lorem ipsum dolor sit amet consectetur <label>( 2010 )</label></p>
-                        <p>Nam libero tempore, cum soluta nobis <label>( 2011 )</label></p>
-                        <p>Lorem Ipsum, you need to be sure there <label>( 2009 )</label></p>
-                        <p>Nam libero tempore, cum soluta nobis <label>( 2011 )</label></p>
-                        <p>Lorem ipsum dolor sit amet consectetur<label>( 2014 )</label></p>
-                        <p>libero tempore, cum soluta nobis Nam <label>( 2011 )</label></p>
-                    </div>
-                </div>
-                <div class="col-md-6 study-grid">
-                    <h3>skills..<span>!</span></h3>
-                    <div class="study2">
-                        <h4>html</h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                <span class="sr-only">40% Complete (success)</span>
-                            </div>
-                        </div>
-                        <h4>css</h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                <span class="sr-only">20% Complete</span>
-                            </div>
-                        </div>
-                        <h4>js</h4>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="sr-only">60% Complete (warning)</span>
-                            </div>
-                        </div>
-                        <h4>php
-                            <h4>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                        <span class="sr-only">80% Complete (danger)</span>
-                                    </div>
-                                </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>-->
-    <!--end study-section-->
-
-    <!--<div class="copyrights">Collect from <a href="http://www.cssmoban.com/">企业网站模板</a></div>-->
-
-    <!--start-services-section-->
-    <div class="service-section" id="service">
+    <!-- start-services-section-->
+    <!-- <div class="service-section" id="service">
         <div class="container">
 
             <div class="service-grids">
@@ -110,9 +57,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
                     <h4>THE BEST DESIGN</h4>
                     <span> </span>
-                    <p><a href="https://uploads.knightlab.com/storymapjs/280ed3572ddbb02b7270e8c68fffaeab/cities-i-have-been-visited/index.html">StoryMap Example</a></p>
-                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem Ipsum passages containing of Letraset sheets</p>-->
-                </div>
+                    <p><a href="https://uploads.knightlab.com/storymapjs/280ed3572ddbb02b7270e8c68fffaeab/cities-i-have-been-visited/index.html">StoryMap Example</a></p> -->
+    <!-- </div>
                 <div class="col-md-4 service-grid">
                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                     <h4>THE BEST SUPPORT</h4>
@@ -125,13 +71,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h4>THE BEST SOLUTIONS</h4>
                     <span> </span>
 			<p><a href="test.html">test</a></p>
-                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem Ipsum passages containing of Letraset sheets</p>-->
                 </div>
                 <div class="clearfix"> </div>
             </div>
         </div>
-    </div>
-    <!--end services-section-->
+    </div> -->
+    <!--end services-section -->
 
     <!--start-social-section-->
     <!--<div class="social-icons">
@@ -161,20 +106,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--start-contact-section-->
     <div class="contact-section" id="contact">
         <div class="container">
-            <h3>contact me</h3>
+            <h3>Please enter your password</h3>
             <div class="contact-details">
-                <form>
-                    <div class="col-md-6 contact-left">
-                        <input type="text" class="text" value="Name *" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name *';}">
-                        <input type="text" class="text" value="Email *" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Email *';}">
-                        <input type="text" class="text" value="phone *" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Phone *';}">
+                <form method="post" name="myform" onsubmit="checkpost()">
+                    <div class="center">
+                        <input type="text" id="password" class="text" value="Password *" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Name *';}">
                     </div>
-                    <div class="col-md-6 contact-right">
-                        <textarea value="Message" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Message';}">Message *</textarea>
-                        <input type="submit" value="Send Message" />
+                    <div class="center" align="center">
+                        <input type="button" value="Submit" name="chkBtn" id="chkBtn" />
                     </div>
                     <div class="clearfix"> </div>
                 </form>
+                <script>
+                    document.getElementById('chkBtn').addEventListener('click', function() {
+                        var password = document.getElementById("password").value;
+                        if (password == '杨九明大宝贝') {
+                            window.location.href = "fireworks.html";
+                        } else {
+                            alert('一边儿凉快去');
+                        }
+                    });
+                </script>
             </div>
         </div>
     </div>
@@ -190,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="footer-section">
         <div class="container">
             <div class="footer-top">
-                <p>Copyright &copy; 2017 Echo.G All rights reserved.</p>
+                <p>Copyright &copy; 2021 Echo.G All rights reserved.</p>
             </div>
             <script type="text/javascript">
                 $(document).ready(function() {
